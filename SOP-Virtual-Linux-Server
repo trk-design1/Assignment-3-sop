@@ -16,7 +16,8 @@ APPROVAL TABLE:
 |         |        |          |
 
 PURPOSE OF THE DOCUMENT:
-The purpose of this document is to outline the standardised procedures needed in seting up a virtual linux server for application testing
+The purpose of this document is to outline the standardised procedures needed in seting up a virtual linux server for application testing.
+This document ensures that the virtual linux server is configured properly and securedly to support documentation and testing.
 
 AUDIENCE:
 The audience of this doccument are Software Developers, Quality and Assurance Testers, System and IT Administrator, DevOps Engineers and Students
@@ -39,7 +40,23 @@ ACCOUNTABILITY MATRIX:
 |Software Developers  |Deploy and test web application                 |
 |IT manager           |Approve configuration and compliance            |
 
-DEFINITIONS
-|Term               |Definitions                                          |
-|-------------------|-----------------------------------------------------|
-|Virtual Machine(VM)|A virtual operating system running on the host system|
+DEFINITIONS:
+|Term                             |Definitions                                            |
+|---------------------------------|-------------------------------------------------------|
+|Virtual Machine(VM)              |A virtual operating system running on the host system  |
+|Apache                           |A web servr software used to serve web pages           |
+|MySQL                            |A database server used for storing application data    |
+|Hypertext Preprocessor(PHP)      |A general-purpose scripting laguage for web development|
+|Virtualization software          |A software that can host a vitual machine              |
+|Non-Volatile Memory Express(NVme)|A high-performance storage drive for speed and latency |
+|Solid-State Drive(SSD)           |A fast, durable and non-voatile storage device         |
+
+PROCEDURE STEPS:
+Step 1: Create the Virtual Machine
+Create a virtual machine using a virtualization software such as VMware or Virtualbox. Configure the virtual machine with 8gb RAM, 4 CPU cores,
+and 50gb NVMe SSD storage.
+
+
+
+
+
