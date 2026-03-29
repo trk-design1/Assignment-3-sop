@@ -25,4 +25,21 @@ SCOPE:
 The scopes covered by this SOP are to be applied when:
 1. A new testing environment is required
 2. Testing or troubleshooting a created web application
-The objextives of this SOP are:
+The objectives of this SOP are:
+1. Creation of a virtual linux server
+2. Installation of required web services
+3. Configuration of networking and firewall rules
+4. Validation of web applicaton testing environment
+
+ACCOUNTABILITY MATRIX:
+|Role                 |Responsibility                                  |
+|---------------------|------------------------------------------------|
+|Systems Administrator|Create and configure virtual machines           |
+|Network Administrator|Configure network settings and test connectivity|
+|Software Developers  |Deploy and test web application                 |
+|IT manager           |Approve configuration and compliance            |
+
+DEFINITIONS
+|Term               |Definitions                                          |
+|-------------------|-----------------------------------------------------|
+|Virtual Machine(VM)|A virtual operating system running on the host system|
