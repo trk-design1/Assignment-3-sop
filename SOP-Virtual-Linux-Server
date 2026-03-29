@@ -4,12 +4,25 @@ MANITOBA INSTITUTE OF TRADES AND TECHNOLOGY
 (204) 989-6500
 
 REVERSION INFO:
-|Version|Date       |Name                                                           |Designation  |
-|-------|-----------|---------------------------------------------------------------|-------------|
-|1.0    |29/03/2026 |Roman Onisodueniya (onisodueniyapenielbomaroman@student.mitt.ca|Author       |
-|       |           |                                                               |             |
+|Version|Date       |Name                                                            |Designation  |
+|-------|-----------|----------------------------------------------------------------|-------------|
+|1.0    |29/03/2026 |Roman Onisodueniya (onisodueniyapenielbomaroman@student.mitt.ca)|Author       |
+|       |           |                                                                |             |
 
-PURPOSE OF THE DOCUMENT
+APPROVAL TABLE:
+|Name     |Title   |Date      |
+|---------|--------|----------|
+|Mr. Felix|Teacher |27/03/2026|
+|         |        |          |
+
+PURPOSE OF THE DOCUMENT:
 The purpose of this document is to outline the standardised procedures needed in seting up a virtual linux server for application testing
 
-AUDIENCE
+AUDIENCE:
+The audience of this doccument are Software Developers, Quality and Assurance Testers, System and IT Administrator, DevOps Engineers and Students
+
+SCOPE:
+The scopes covered by this SOP are to be applied when:
+1. A new testing environment is required
+2. Testing or troubleshooting a created web application
+The objextives of this SOP are:
