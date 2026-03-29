@@ -4,7 +4,10 @@ MANITOBA INSTITUTE OF TRADES AND TECHNOLOGY
 (204) 989-6500
 
 REVERSION INFO:
-VERSION
+|Version|Date       |Name                                                           |Designation  |
+|-------|-----------|---------------------------------------------------------------|-------------|
+|1.0    |29/03/2026 |Roman Onisodueniya (onisodueniyapenielbomaroman@student.mitt.ca|Author       |
+|       |           |                                                               |             |
 
 PURPOSE OF THE DOCUMENT
 The purpose of this document is to outline the standardised procedures needed in seting up a virtual linux server for application testing
