@@ -49,7 +49,7 @@ DEFINITIONS:
 |Hypertext Preprocessor(PHP)      |A general-purpose scripting laguage for web development|
 |Virtualization software          |A software that can host a vitual machine              |
 |Non-Volatile Memory Express(NVme)|A high-performance storage drive for speed and latency |
-|Solid-State Drive(SSD)           |A fast, durable and non-voatile storage device         |
+|Solid-State Drive(SSD)           |A fast, durable and non-volatile storage device         |
 
 PROCEDURE STEPS:
 Step 1: Create the Virtual Machine
