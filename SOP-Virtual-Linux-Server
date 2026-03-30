@@ -13,7 +13,6 @@ APPROVAL TABLE:
 |Name     |Title   |Date      |
 |---------|--------|----------|
 |Mr. Felix|Teacher |27/03/2026|
-|         |        |          |
 
 PURPOSE OF THE DOCUMENT:
 The purpose of this document is to outline the standardised procedures needed in seting up a virtual linux server for application testing.
@@ -41,15 +40,18 @@ ACCOUNTABILITY MATRIX:
 |IT manager           |Approve configuration and compliance            |
 
 DEFINITIONS:
-|Term                             |Definitions                                            |
-|---------------------------------|-------------------------------------------------------|
-|Virtual Machine(VM)              |A virtual operating system running on the host system  |
-|Apache                           |A web servr software used to serve web pages           |
-|MySQL                            |A database server used for storing application data    |
-|Hypertext Preprocessor(PHP)      |A general-purpose scripting laguage for web development|
-|Virtualization software          |A software that can host a vitual machine              |
-|Non-Volatile Memory Express(NVme)|A high-performance storage drive for speed and latency |
-|Solid-State Drive(SSD)           |A fast, durable and non-volatile storage device        |
+|Term                             |Definitions                                                  |
+|---------------------------------|-------------------------------------------------------------|
+|Virtual Machine(VM)              |A virtual operating system running on the host system        |
+|Apache                           |A web servr software used to serve web pages                 |
+|MySQL                            |A database server used for storing application data          |
+|Hypertext Preprocessor(PHP)      |A general-purpose scripting laguage for web development      |
+|Virtualization software          |A software that can host a vitual machine                    |
+|Non-Volatile Memory Express(NVme)|A high-performance storage drive for speed and latency       |
+|Solid-State Drive(SSD)           |A fast, durable and non-volatile storage device              |
+|ISO file                         |An uncompressed file that is a copy of an entire optical disc|
+|Repositrory                      |A Linux digital storage holding software packages and updates| 
+
 
 PROCEDURE STEPS:
 Step 1: Create the Virtual Machine
