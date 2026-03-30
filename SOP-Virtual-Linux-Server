@@ -4,10 +4,10 @@ MANITOBA INSTITUTE OF TRADES AND TECHNOLOGY
 (204) 989-6500
 
 REVERSION INFO:
-|Version|Date       |Name                                                            |Designation  |
-|-------|-----------|----------------------------------------------------------------|-------------|
-|1.0    |29/03/2026 |Roman Onisodueniya (onisodueniyapenielbomaroman@student.mitt.ca)|Author       |
-|       |           |                                                                |             |
+|Version|Date       |Name                                                            |Designation  |Parts Changed                               |
+|-------|-----------|----------------------------------------------------------------|-------------|--------------------------------------------|
+|1.0    |29/03/2026 |Roman Onisodueniya (onisodueniyapenielbomaroman@student.mitt.ca)|Author       |Creator                                     |
+|1.1    |30/03/2026 |Roman Onisodueniya (onisodueniyapenielbomaroman@student.mitt.ca)|Author       |Added procedure steps, and related documents|                                                                
 
 APPROVAL TABLE:
 |Name     |Title   |Date      |
@@ -53,9 +53,66 @@ DEFINITIONS:
 
 PROCEDURE STEPS:
 Step 1: Create the Virtual Machine
-Create a virtual machine using a virtualization software such as VMware or Virtualbox. Configure the virtual machine with 8gb RAM, 4 CPU cores,
-and 50gb NVMe SSD storage.
+1. Open the virtualisation software(VirtualBox, VMware or Proxmox)
+2. Select Create New Virtual Machine
+3. Name it "webtest-server", choose the type to be Linux and the version Ubuntu LTS(64-bit)
+4. Configure the system with 2 CPU cores, 4gb RAM and 20 gb NVMe SSD storage.
+5. Attach the Ubuntu server ISO file
+6. Set the network adapter to NAT or Bridged
+7. Start the virtual Machine
 
+Step 2: Install the Operating System
+1. Select Install Ubuntu Server 
+2. Choose preferred language and keyboard layout
+3. Configure network to use DHCP
+4. Set the hostname as "webtest-server"
+5. Create the user account with a username and pasword of your choice
+6. Select Install OpenSSH Server when prompted
+7. After the installation is done, reboot the system and log in with your created credentials
+
+Step 3: Update System and Configure Network
+1. In the command line, use "sudo apt update" to update package repository
+2. Use "sudo apt upgrade -y" to upgrade installed packages
+3. Check your IP address with "ip a" and check your internet connectivity with "ping -c 4 google.com"
+
+Step 4: Install Web Server
+1. Install Apache wit "sudo apt install apachew -y"
+2. Start Apache service with "sudo systemctl start apache2"
+3. Enable Apache to start at boot with "sudo systemctl enable apache2"
+4. Verify Apache status with "sudo systemctl status apache2"
+
+Step 5: Install Database Server
+1. Install MySQL with "sudo apt install mysql-server -y"
+2. Secure MySQL installation wirh "sudo mysql_secure_installation"
+
+Step 6: Install PHP and required Modules
+1. Install PHP and it's requirements with "sudo apt install php libapache2-mod-php php-mysql -y"
+2. Restart Apache with "sudo systemctl restart apache2"
+
+Step 7: Configure Firewall
+1. Allow SSH with "sudo ufw allow OpenSSH"
+2. Allow Apache with "sudo ufw allow 'Apache'"
+3. Enable firewall with "sudo ufw enable"
+
+Step 8: Create Test Web Page
+1. Create PHP test file with "sudo nano /var/www/html/info.php"
+2. Add content:
+"<?php
+phpinfo();
+?>"
+3. Save and exit
+
+Step 9: Verify Web Server
+1. Open web browser on host machine
+2. Enter the Linux server IP address "http://<server-ip-address>"
+3. Test PHP page "http://<server-ip-address>/info.php"
+4. If configured correctly the Apache default page would load and the PHP information page displays
+
+REFERENCE OR RELATED DOCUMENTS:
+1. Linux Server Installation Guide
+2. Virtual Machine Deployment Policy
+3. Web Application Testing Standards
+4. Network Security Configuration Guidelines
 
 
 
